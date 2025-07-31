@@ -1,0 +1,71 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #555;
+}
+
+/* 基本スタイル */
+body {
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    background-color: #fff;
+    /* 背景は白 */
+    color: #555;
+    /* 文字は黒 */
+    margin: 0;
+    padding: 2rem;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5% 0;
+    border-top: 1px solid #555;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-weight: normal;
+    /* 明朝体は太くしすぎない */
+    letter-spacing: 0.1em;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* 年度グリッドのスタイル */
+.year-grid {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.year-grid a {
+    margin: 10% 0;
+    border: 1px solid #555;
+    padding: 2rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    /* なめらかな変化 */
+}
+
+/* マウスを乗せたら黒背景・白文字に反転 */
+.year-grid a:hover {
+    background-color: #555;
+    color: #fff;
+}
